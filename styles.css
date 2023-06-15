@@ -21,7 +21,7 @@ body {
   justify-content: center;
 }
 .container {
-  width: 90%;
+  width: 80%;
   padding: 16px 128px;
   max-width: 1920px;
   color: #fff;
@@ -36,18 +36,28 @@ body {
   align-items: center;
   width: 100%;
   justify-content: space-between;
+  max-width: 1400px;
 }
+
+.icon-area{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+
 
 .content {
   display: flex;
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
   margin-top: 32px;
+  max-width: 1400px;
 }
 .content-text {
-  max-width: 600px;
+  max-width: 800px;
+  font-size: 24px;
 }
 
 .img-area {
@@ -56,6 +66,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 36px;
+  max-width: 1920px;
 }
 
 .title-area {
@@ -80,6 +91,12 @@ body {
   height: 8px;
   width: 60%;
   background-color: orangered;
+}
+
+.bar2{
+  width: 100%;
+  background-color: orangered;
+  height: 5px;
 }
 
 .img-area-content {
@@ -115,6 +132,6 @@ body {
   width: 100%;
 }
 img {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
 }
