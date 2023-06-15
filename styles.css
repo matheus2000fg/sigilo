@@ -10,25 +10,43 @@
 }
 
 body {
-  background-image: url("bg.jpg");
-  background-color: #fff;
-  background-position: center;
+  background-image: url("bg2.png");
+  background-color: #000;
+  background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
+}
+
+@media (max-width: 1200px)
+{
+  body
+   {
+    background-size: auto;
+    font-size: 48px;
+   }
+}
+
+
+
+.main {
+
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
-.container {
-  width: 80%;
-  padding: 16px 128px;
+.container { 
+  width: 90%;
+  padding: 16px;
   max-width: 1920px;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  
+  
 }
 
 .header {
@@ -37,6 +55,30 @@ body {
   width: 100%;
   justify-content: space-between;
   max-width: 1400px;
+  gap: 16px;
+}
+
+.headerTitle {
+  font-size: 64px;
+}
+
+@media (max-width: 1200px)
+{
+  .headerTitle
+   {
+    
+    font-size: 48px;
+   }
+}
+
+@media (max-width: 1200px)
+{
+  .header 
+   {
+    justify-content: center;
+    flex-direction: column;
+    
+   }
 }
 
 .icon-area{
@@ -49,15 +91,53 @@ body {
 
 .content {
   display: flex;
-  display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
-  margin-top: 32px;
+  margin-top: 8px;
   max-width: 1400px;
+  
+}
+
+@media (max-width: 1200px)
+{
+  .content
+   {
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+   }
+}
+
+.love-u {
+  font-family: "Caveat", cursive;
+  color: #fff;
+  font-size: 64px;
+  width: 100px;
+  margin-right: 100px;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #fff,
+  0 0 42px rgb(211, 44, 105),
+  0 0 82px rgb(211, 44, 105),
+  0 0 92px rgb(211, 44, 105),
+  0 0 102px rgb(211, 44, 105),
+  0 0 151px rgb(211, 44, 105);
+
+}
+
+@media (max-width: 1200px)
+{
+  .love-u
+   {
+    margin: 0;
+   }
 }
 .content-text {
-  max-width: 800px;
-  font-size: 24px;
+  max-width: 600px;
+  font-size: 18px;
+  text-align: justify;
 }
 
 .img-area {
@@ -67,6 +147,7 @@ body {
   justify-content: space-between;
   gap: 36px;
   max-width: 1920px;
+  
 }
 
 .title-area {
@@ -84,12 +165,14 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 100%;
+  text-align: center;
   font-size: 36px;
+  
 }
 
 .bar {
   height: 8px;
-  width: 60%;
+  width: 40%;
   background-color: orangered;
 }
 
@@ -97,6 +180,7 @@ body {
   width: 100%;
   background-color: orangered;
   height: 5px;
+  
 }
 
 .img-area-content {
@@ -105,33 +189,62 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  
   flex-direction: column;
 }
 
 .img-card-container {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-evenly;
+  max-width: 1920px;
+  
+  
+  
+  
+}
+
+@media (max-width: 1200px)
+{
+  .img-card-container
+   {
+    flex-direction: column;
+    align-items: center;
+   }
 }
 
 .img-card {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 450px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  
 }
 
 .subtitle {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   width: 100%;
+  font-size: 14px;
+  
 }
 img {
   width: 400px;
-  height: 400px;
+  height: 300px;
+  
+}
+
+@media (max-width: 400px)
+{
+  img
+   {
+    width: 300px;
+    height: 200px;
+    
+   }
 }
