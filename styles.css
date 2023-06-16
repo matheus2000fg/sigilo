@@ -3,7 +3,9 @@
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
-
+a {
+  text-decoration: none;
+}
 .zap {
   font-family: "Caveat", cursive;
   font-family: "Poppins", sans-serif;
